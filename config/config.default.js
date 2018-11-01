@@ -11,8 +11,16 @@ module.exports = appInfo => {
       mapping: {
         '.tpl': 'nunjucks',
       },
-      // add your config here
-      middleware: [],
+    },
+    // add your config here
+    middleware: [
+      'robot',
+    ],
+    // robot's configurations
+    robot: {
+      ua: [
+        /Baiduspider/i,
+      ],
     },
   };
   return config;

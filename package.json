@@ -22,9 +22,10 @@
     "node": ">=8.9.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-seo-project-server",
-    "stop": "egg-scripts stop --title=egg-server-seo-project-server",
-    "dev": "egg-bin dev",
+    "proStart": "EGG_SERVER_ENV=prod egg-scripts start --port=7000 --daemon --title=egg-server-business-server-tpl",
+    "start": "EGG_SERVER_ENV=dev egg-scripts start --port=7000 --daemon --title=egg-server-business-server-tpl",
+    "stop": "egg-scripts stop --title=egg-server-business-server-tpl",
+    "local": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
