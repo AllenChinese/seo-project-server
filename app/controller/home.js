@@ -6,9 +6,9 @@ class HomeController extends Controller {
   async index() {
     const ctx = this.ctx;
     // this.ctx.body = 'hi, egg';
-    const title = 'hello world';
+    const msg = ctx.service.project1.home.getTitle();
     await ctx.render('index.nj', {
-      title,
+      msg,
     });
   }
 }
