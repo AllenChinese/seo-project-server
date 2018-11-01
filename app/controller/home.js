@@ -4,7 +4,12 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    this.ctx.body = 'hi, egg';
+    const ctx = this.ctx;
+    // this.ctx.body = 'hi, egg';
+    const title = 'hello world';
+    await ctx.render('index.nj', {
+      title,
+    });
   }
 }
 
