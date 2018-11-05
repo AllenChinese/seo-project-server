@@ -6,5 +6,5 @@
 
 module.exports = app => {
   const { router, controller: { testProject } } = app;
-  router.get('/', testProject.index);
+  router.get('/testProject', testProject.index);
 };

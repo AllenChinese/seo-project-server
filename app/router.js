@@ -6,5 +6,7 @@ const testProjectRouter = require('./router/testProject');
  */
 module.exports = app => {
   const { router, controller: { common } } = app;
+  // 通用启动页
+  router.get('/', common.main);
   testProjectRouter(app);
 };
