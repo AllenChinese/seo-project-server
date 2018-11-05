@@ -2,7 +2,7 @@
 {% for item in msg %}
   <li>
     <h2>{{item.title}}</h2>
-    <h4>{{item.name}}</h4>
+    <h4>{{item.author}}</h4>
   </li>
 {% endfor %}
 </ul>

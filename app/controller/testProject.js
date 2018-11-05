@@ -7,8 +7,9 @@ class HomeController extends Controller {
     const { ctx } = this;
     const { getData } = ctx.helper;
     // this.ctx.body = 'hi, egg';
-    const msgRes = ctx.service.testProject.home.getTitle();
-    const msg = getData(msgRes, 'results', []);
+    const msgRes = await ctx.service.testProject.home.getTitle('testProject.indexList');
+    const msg = getData(msgRes, 'data.results', []);
+
     await ctx.render('index.nj', {
       msg,
     });

@@ -5,6 +5,10 @@ module.exports = appInfo => {
   config = {
     // use for cookie sign key, should change to your own and keep security
     keys: appInfo.name + '_1541054919103_4534',
+    // project
+    project: [
+      'testProject',
+    ],
     // views
     view: {
       defaultViewEngine: 'nunjucks',
