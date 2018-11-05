@@ -6,7 +6,7 @@ module.exports = appInfo => {
     // use for cookie sign key, should change to your own and keep security
     keys: appInfo.name + '_1541054919103_4534',
     // project
-    project: [
+    projects: [
       'testProject',
     ],
     // views
