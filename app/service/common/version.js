@@ -11,7 +11,6 @@ class VersionService extends Service {
       // this.app.locals.time[projectName] = newTime
 
       const result = await new Promise((resolve, reject) => {
-        console.log('-----------------', projectName);
         this.app.memcached.set(timekey, newTime, expire, err => {
           console.log(err);
           if (err) {

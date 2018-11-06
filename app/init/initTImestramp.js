@@ -20,9 +20,9 @@ module.exports = app => {
     memcached.get(timekey, (err, data) => {
       if (!err && data) {
         app.locals.time[item] = data;
-        console.log(`${timekey} has a memed timestamp`, data);
+        console.log(`${timekey} has a memcached timestamp`, data);
       } else {
-        console.log(`${timekey} has not a memed timestamp`);
+        console.log(`${timekey} has not a memcached timestamp`);
         memcached.set(timekey, time, expire, () => {
           console.log(`${timekey} has been created`, time);
         });
