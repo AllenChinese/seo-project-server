@@ -8,5 +8,7 @@ module.exports = app => {
   const { router, controller: { common } } = app;
   // 通用启动页
   router.get('/', common.main);
+  // 清时间戳
+  router.get('/:project/clearVersion', common.clearVersion);
   testProjectRouter(app);
 };

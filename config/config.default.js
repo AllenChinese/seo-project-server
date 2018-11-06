@@ -20,6 +20,21 @@ module.exports = appInfo => {
     middleware: [
       'robot',
     ],
+    httpclient: {
+      request: {
+        timeout: 8000,
+      },
+      followRedirect: true,
+    },
+    // 过期时间
+    time: {
+      expire: 3600 * 24 * 30,
+    },
+    // 缓存配置
+    memcached: {
+      dev: '192.168.200.244:11211',
+      cn: '',
+    },
     // robot's configurations
     robot: {
       ua: [
