@@ -12,27 +12,27 @@
 ├── app
 │   ├── api 
 │   │   ├── common.js 
-│   │   ├── index.js // api 配置
-│   │   └── testProject.js // 当个项目 api 目录
-│   ├── controller // 用于解析用户的输入，处理后返回相应的结果
+│   │   ├── index.js                                // api 配置
+│   │   └── testProject.js                          // 当个项目 api 目录
+│   ├── controller                                  // 用于解析用户的输入，处理后返回相应的结果
 │   │   ├── common.js
 │   │   └── testProject.js
 │   ├── extend
 │   │   ├── context.js
 │   │   └── helper.js
-│   ├── init // 项目启动初始化执行 js
+│   ├── init                                        // 项目启动初始化执行 js
 │   │   ├── initAssets.js
 │   │   └── initTImestramp.js
-│   ├── middleware // 中间件
+│   ├── middleware                                  // 中间件
 │   │   └── robot.js
 │   ├── public
-│   ├── router // 用于配置 URL 路由规则
+│   ├── router                                      // 用于配置 URL 路由规则
 │   │   └── testProject.js
-│   ├── router.js // 全局路由配置
-│   ├── service // 用于编写业务逻辑层
+│   ├── router.js                                   // 全局路由配置
+│   ├── service                                     // 用于编写业务逻辑层
 │   │   ├── common
 │   │   └── testProject
-│   └── view // 页面
+│   └── view                                        // 页面模板
 │       ├── default
 │       └── index.nj
 ├── app.js
