@@ -15,4 +15,9 @@ module.exports = {
       ? qs.parse(result[1])
       : '';
   },
+  jsonStringify(obj) {
+    const str = JSON.stringify(obj).replace(/"|'/gi, '').trim();
+    console.log('str', str);
+    return str;
+  },
 };
