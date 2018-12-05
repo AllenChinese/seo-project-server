@@ -1,6 +1,6 @@
 # seo-project-server
 
-前后端分离，多页面 seo server tpl。
+前后端分离，SEO 多页面服务端渲染模板。
 
 ## 项目目录结构
 
@@ -63,7 +63,7 @@ see [egg docs][egg] for more detail.
 
 ```bash
 $ npm i
-$ npm run dev
+$ npm run local
 $ open http://localhost:7001/
 ```
 
